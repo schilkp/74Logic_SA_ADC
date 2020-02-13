@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 11
 Title "Schilk_SA-ADC"
 Date "2020-02-03"
-Rev "v0.0 (Production)"
+Rev "v0.0 (Prod.)"
 Comp "Philipp Schilk"
 Comment1 ""
 Comment2 ""

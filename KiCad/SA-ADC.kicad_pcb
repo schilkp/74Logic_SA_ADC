@@ -13,7 +13,7 @@
   (title_block
     (title SA-ADC)
     (date 2020-02-13)
-    (rev "v0.0 (Production)")
+    (rev "v0.0 (Prod.)")
   )
 
   (layers
