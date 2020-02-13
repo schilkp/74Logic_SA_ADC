@@ -1,0 +1,303 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 11
+Title "Schilk_SA-ADC"
+Date "2020-02-03"
+Rev "v0.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2850 1650 0    50   Input ~ 0
+D0
+Text HLabel 2850 2050 0    50   Input ~ 0
+D1
+Text HLabel 2850 2450 0    50   Input ~ 0
+D2
+Text HLabel 2850 2850 0    50   Input ~ 0
+D3
+Text HLabel 2850 3250 0    50   Input ~ 0
+D4
+Text HLabel 2850 3650 0    50   Input ~ 0
+D5
+Text HLabel 2850 4050 0    50   Input ~ 0
+D6
+Text HLabel 2850 4450 0    50   Input ~ 0
+D7
+Text HLabel 3750 4700 2    50   Input ~ 0
+Vdac
+$Comp
+L Device:R_Small R50
+U 1 1 5EABC5B1
+P 3300 1900
+F 0 "R50" H 3241 1946 50  0000 R CNN
+F 1 "10K" H 3241 1855 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3300 1900 50  0001 C CNN
+F 3 "~" H 3300 1900 50  0001 C CNN
+	1    3300 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R41
+U 1 1 5EABD93E
+P 3050 1300
+F 0 "R41" V 2854 1300 50  0000 C CNN
+F 1 "20K" V 2945 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 1300 50  0001 C CNN
+F 3 "~" H 3050 1300 50  0001 C CNN
+	1    3050 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R42
+U 1 1 5EABE85F
+P 3050 1650
+F 0 "R42" V 2854 1650 50  0000 C CNN
+F 1 "20K" V 2945 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 1650 50  0001 C CNN
+F 3 "~" H 3050 1650 50  0001 C CNN
+	1    3050 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 1800 3300 1650
+Wire Wire Line
+	3300 1650 3150 1650
+$Comp
+L Device:R_Small R51
+U 1 1 5EABF0E0
+P 3300 2300
+F 0 "R51" H 3241 2254 50  0000 R CNN
+F 1 "10K" H 3241 2345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3300 2300 50  0001 C CNN
+F 3 "~" H 3300 2300 50  0001 C CNN
+	1    3300 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R43
+U 1 1 5EABF0EA
+P 3050 2050
+F 0 "R43" V 2854 2050 50  0000 C CNN
+F 1 "20K" V 2945 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 2050 50  0001 C CNN
+F 3 "~" H 3050 2050 50  0001 C CNN
+	1    3050 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2200 3300 2050
+Wire Wire Line
+	3300 2050 3150 2050
+$Comp
+L Device:R_Small R52
+U 1 1 5EAC0D8C
+P 3300 2700
+F 0 "R52" H 3241 2654 50  0000 R CNN
+F 1 "10K" H 3241 2745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3300 2700 50  0001 C CNN
+F 3 "~" H 3300 2700 50  0001 C CNN
+	1    3300 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R44
+U 1 1 5EAC0D96
+P 3050 2450
+F 0 "R44" V 2854 2450 50  0000 C CNN
+F 1 "20K" V 2945 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 2450 50  0001 C CNN
+F 3 "~" H 3050 2450 50  0001 C CNN
+	1    3050 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2600 3300 2450
+Wire Wire Line
+	3300 2450 3150 2450
+$Comp
+L Device:R_Small R53
+U 1 1 5EAC0DA2
+P 3300 3100
+F 0 "R53" H 3241 3054 50  0000 R CNN
+F 1 "10K" H 3241 3145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3300 3100 50  0001 C CNN
+F 3 "~" H 3300 3100 50  0001 C CNN
+	1    3300 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R45
+U 1 1 5EAC0DAC
+P 3050 2850
+F 0 "R45" V 2854 2850 50  0000 C CNN
+F 1 "20K" V 2945 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 2850 50  0001 C CNN
+F 3 "~" H 3050 2850 50  0001 C CNN
+	1    3050 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3000 3300 2850
+Wire Wire Line
+	3300 2850 3150 2850
+$Comp
+L Device:R_Small R54
+U 1 1 5EAC285A
+P 3300 3500
+F 0 "R54" H 3241 3454 50  0000 R CNN
+F 1 "10K" H 3241 3545 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3300 3500 50  0001 C CNN
+F 3 "~" H 3300 3500 50  0001 C CNN
+	1    3300 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R46
+U 1 1 5EAC2864
+P 3050 3250
+F 0 "R46" V 2854 3250 50  0000 C CNN
+F 1 "20K" V 2945 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 3250 50  0001 C CNN
+F 3 "~" H 3050 3250 50  0001 C CNN
+	1    3050 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3400 3300 3250
+Wire Wire Line
+	3300 3250 3150 3250
+$Comp
+L Device:R_Small R55
+U 1 1 5EAC2870
+P 3300 3900
+F 0 "R55" H 3241 3854 50  0000 R CNN
+F 1 "10K" H 3241 3945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3300 3900 50  0001 C CNN
+F 3 "~" H 3300 3900 50  0001 C CNN
+	1    3300 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R47
+U 1 1 5EAC287A
+P 3050 3650
+F 0 "R47" V 2854 3650 50  0000 C CNN
+F 1 "20K" V 2945 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 3650 50  0001 C CNN
+F 3 "~" H 3050 3650 50  0001 C CNN
+	1    3050 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3800 3300 3650
+Wire Wire Line
+	3300 3650 3150 3650
+$Comp
+L Device:R_Small R56
+U 1 1 5EAC2886
+P 3300 4300
+F 0 "R56" H 3241 4254 50  0000 R CNN
+F 1 "10K" H 3241 4345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3300 4300 50  0001 C CNN
+F 3 "~" H 3300 4300 50  0001 C CNN
+	1    3300 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R48
+U 1 1 5EAC2890
+P 3050 4050
+F 0 "R48" V 2854 4050 50  0000 C CNN
+F 1 "20K" V 2945 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 4050 50  0001 C CNN
+F 3 "~" H 3050 4050 50  0001 C CNN
+	1    3050 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 4200 3300 4050
+Wire Wire Line
+	3300 4050 3150 4050
+$Comp
+L Device:R_Small R49
+U 1 1 5EAC28A6
+P 3050 4450
+F 0 "R49" V 2854 4450 50  0000 C CNN
+F 1 "20K" V 2945 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 4450 50  0001 C CNN
+F 3 "~" H 3050 4450 50  0001 C CNN
+	1    3050 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 4450 3150 4450
+Wire Wire Line
+	3300 2000 3300 2050
+Connection ~ 3300 2050
+Wire Wire Line
+	3300 2400 3300 2450
+Connection ~ 3300 2450
+Wire Wire Line
+	3300 2800 3300 2850
+Connection ~ 3300 2850
+Wire Wire Line
+	3300 3200 3300 3250
+Connection ~ 3300 3250
+Wire Wire Line
+	3300 3600 3300 3650
+Connection ~ 3300 3650
+Wire Wire Line
+	3300 4000 3300 4050
+Connection ~ 3300 4050
+Wire Wire Line
+	3300 4400 3300 4450
+Connection ~ 3300 4450
+Wire Wire Line
+	3150 1300 3300 1300
+Wire Wire Line
+	3300 1300 3300 1650
+Connection ~ 3300 1650
+Wire Wire Line
+	2950 1300 2800 1300
+$Comp
+L power:GND #PWR0205
+U 1 1 5EAC8E93
+P 2800 1350
+F 0 "#PWR0205" H 2800 1100 50  0001 C CNN
+F 1 "GND" H 2805 1177 50  0000 C CNN
+F 2 "" H 2800 1350 50  0001 C CNN
+F 3 "" H 2800 1350 50  0001 C CNN
+	1    2800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1300 2800 1350
+Wire Wire Line
+	2850 1650 2950 1650
+Wire Wire Line
+	2850 2050 2950 2050
+Wire Wire Line
+	2850 2450 2950 2450
+Wire Wire Line
+	2850 2850 2950 2850
+Wire Wire Line
+	2850 3250 2950 3250
+Wire Wire Line
+	2850 3650 2950 3650
+Wire Wire Line
+	2850 4050 2950 4050
+Wire Wire Line
+	2850 4450 2950 4450
+Wire Wire Line
+	3300 4700 3750 4700
+Wire Wire Line
+	3300 4450 3300 4700
+Text Notes 4500 1650 0    50   ~ 0
+R2R DAC\n\nUse Precision Resistors, Optimally <0.5%\n
+$EndSCHEMATC

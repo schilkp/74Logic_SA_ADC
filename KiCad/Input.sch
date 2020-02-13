@@ -1,0 +1,175 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 11
+Title "Schilk_SA-ADC"
+Date "2020-02-03"
+Rev "v0.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_POT RV1
+U 1 1 5E372C1E
+P 3200 3000
+F 0 "RV1" H 3131 3046 50  0000 R CNN
+F 1 "10K" H 3131 2955 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 3200 3000 50  0001 C CNN
+F 3 "~" H 3200 3000 50  0001 C CNN
+	1    3200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0186
+U 1 1 5E373405
+P 3200 2750
+F 0 "#PWR0186" H 3200 2600 50  0001 C CNN
+F 1 "+5V" H 3215 2923 50  0000 C CNN
+F 2 "" H 3200 2750 50  0001 C CNN
+F 3 "" H 3200 2750 50  0001 C CNN
+	1    3200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2750 3200 2850
+$Comp
+L power:GND #PWR0187
+U 1 1 5E373841
+P 3200 3250
+F 0 "#PWR0187" H 3200 3000 50  0001 C CNN
+F 1 "GND" H 3205 3077 50  0000 C CNN
+F 2 "" H 3200 3250 50  0001 C CNN
+F 3 "" H 3200 3250 50  0001 C CNN
+	1    3200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3250 3200 3150
+Wire Wire Line
+	3350 3000 4050 3000
+Wire Wire Line
+	4050 3000 4050 3350
+Wire Wire Line
+	4050 3350 4600 3350
+Wire Wire Line
+	4050 3550 4050 4050
+Wire Wire Line
+	4600 3550 4050 3550
+$Comp
+L Switch:SW_Push_SPDT SW1
+U 1 1 5E374BE2
+P 4800 3450
+F 0 "SW1" H 4800 3125 50  0000 C CNN
+F 1 "SW_Push_SPDT" H 4800 3216 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4800 3450 50  0001 C CNN
+F 3 "~" H 4800 3450 50  0001 C CNN
+	1    4800 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5E3765C4
+P 3300 4050
+F 0 "J1" H 3218 3725 50  0000 C CNN
+F 1 "Conn_01x03" H 3218 3816 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3300 4050 50  0001 C CNN
+F 3 "~" H 3300 4050 50  0001 C CNN
+	1    3300 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 4050 4050 4050
+$Comp
+L power:+5V #PWR0188
+U 1 1 5E3773FE
+P 3700 3900
+F 0 "#PWR0188" H 3700 3750 50  0001 C CNN
+F 1 "+5V" H 3715 4073 50  0000 C CNN
+F 2 "" H 3700 3900 50  0001 C CNN
+F 3 "" H 3700 3900 50  0001 C CNN
+	1    3700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3900 3700 3950
+Wire Wire Line
+	3700 3950 3500 3950
+$Comp
+L power:GND #PWR0189
+U 1 1 5E377AFC
+P 3700 4200
+F 0 "#PWR0189" H 3700 3950 50  0001 C CNN
+F 1 "GND" H 3705 4027 50  0000 C CNN
+F 2 "" H 3700 4200 50  0001 C CNN
+F 3 "" H 3700 4200 50  0001 C CNN
+	1    3700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4200 3700 4150
+Wire Wire Line
+	3700 4150 3500 4150
+Wire Wire Line
+	5000 3450 5200 3450
+$Comp
+L Device:C_Small C38
+U 1 1 5E379028
+P 5200 3600
+F 0 "C38" H 5292 3646 50  0000 L CNN
+F 1 "DNS" H 5292 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5200 3600 50  0001 C CNN
+F 3 "~" H 5200 3600 50  0001 C CNN
+	1    5200 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3500 5200 3450
+Connection ~ 5200 3450
+$Comp
+L Device:C_Small C39
+U 1 1 5E37980B
+P 5700 3600
+F 0 "C39" H 5792 3646 50  0000 L CNN
+F 1 "DNS" H 5792 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5700 3600 50  0001 C CNN
+F 3 "~" H 5700 3600 50  0001 C CNN
+	1    5700 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3500 5700 3450
+Wire Wire Line
+	5200 3450 5700 3450
+Wire Wire Line
+	5700 3450 6200 3450
+Connection ~ 5700 3450
+Wire Wire Line
+	5200 3700 5200 3750
+Wire Wire Line
+	5200 3750 5450 3750
+Wire Wire Line
+	5700 3750 5700 3700
+Wire Wire Line
+	5450 3750 5450 3850
+Connection ~ 5450 3750
+Wire Wire Line
+	5450 3750 5700 3750
+$Comp
+L power:GND #PWR0190
+U 1 1 5E37A75F
+P 5450 3850
+F 0 "#PWR0190" H 5450 3600 50  0001 C CNN
+F 1 "GND" H 5455 3677 50  0000 C CNN
+F 2 "" H 5450 3850 50  0001 C CNN
+F 3 "" H 5450 3850 50  0001 C CNN
+	1    5450 3850
+	1    0    0    -1  
+$EndComp
+Text HLabel 6200 3450 2    50   Input ~ 0
+VIN
+$EndSCHEMATC

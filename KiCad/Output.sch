@@ -1,0 +1,504 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 11
+Title "Schilk_SA-ADC"
+Date "2020-02-03"
+Rev "v0.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1400 1550 0    50   Input ~ 0
+OUT_0
+Text HLabel 1400 1650 0    50   Input ~ 0
+OUT_1
+Text HLabel 1400 1750 0    50   Input ~ 0
+OUT_2
+Text HLabel 1400 1850 0    50   Input ~ 0
+OUT_3
+Text HLabel 1400 1950 0    50   Input ~ 0
+OUT_4
+Text HLabel 1400 2050 0    50   Input ~ 0
+OUT_5
+Text HLabel 1400 2150 0    50   Input ~ 0
+OUT_6
+Text HLabel 1400 2250 0    50   Input ~ 0
+OUT_7
+$Comp
+L Device:R_Small R?
+U 1 1 5E45EB24
+P 4100 1550
+AR Path="/5E359009/5E45EB24" Ref="R?"  Part="1" 
+AR Path="/5E38B78E/5E45EB24" Ref="R28"  Part="1" 
+F 0 "R28" V 4050 1750 50  0000 C CNN
+F 1 "rled" V 4050 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 1550 50  0001 C CNN
+F 3 "~" H 4100 1550 50  0001 C CNN
+	1    4100 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5E45EB2A
+P 4550 1550
+AR Path="/5E359009/5E45EB2A" Ref="D?"  Part="1" 
+AR Path="/5E38B78E/5E45EB2A" Ref="D28"  Part="1" 
+F 0 "D28" H 4650 1500 50  0000 C CNN
+F 1 "LED_Small" H 4300 1500 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4550 1550 50  0001 C CNN
+F 3 "~" V 4550 1550 50  0001 C CNN
+	1    4550 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 1550 4200 1550
+$Comp
+L Device:R_Small R?
+U 1 1 5E45EB31
+P 4100 1650
+AR Path="/5E359009/5E45EB31" Ref="R?"  Part="1" 
+AR Path="/5E38B78E/5E45EB31" Ref="R29"  Part="1" 
+F 0 "R29" V 4050 1850 50  0000 C CNN
+F 1 "rled" V 4050 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 1650 50  0001 C CNN
+F 3 "~" H 4100 1650 50  0001 C CNN
+	1    4100 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 1650 4200 1650
+Wire Wire Line
+	4650 1550 5050 1550
+$Comp
+L Device:R_Small R?
+U 1 1 5E4601AE
+P 4100 1750
+AR Path="/5E359009/5E4601AE" Ref="R?"  Part="1" 
+AR Path="/5E38B78E/5E4601AE" Ref="R30"  Part="1" 
+F 0 "R30" V 4050 1950 50  0000 C CNN
+F 1 "rled" V 4050 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 1750 50  0001 C CNN
+F 3 "~" H 4100 1750 50  0001 C CNN
+	1    4100 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 1750 4200 1750
+$Comp
+L Device:R_Small R?
+U 1 1 5E4601BB
+P 4100 1850
+AR Path="/5E359009/5E4601BB" Ref="R?"  Part="1" 
+AR Path="/5E38B78E/5E4601BB" Ref="R31"  Part="1" 
+F 0 "R31" V 4050 2050 50  0000 C CNN
+F 1 "rled" V 4050 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 1850 50  0001 C CNN
+F 3 "~" H 4100 1850 50  0001 C CNN
+	1    4100 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 1850 4200 1850
+$Comp
+L Device:R_Small R?
+U 1 1 5E461406
+P 4100 1950
+AR Path="/5E359009/5E461406" Ref="R?"  Part="1" 
+AR Path="/5E38B78E/5E461406" Ref="R32"  Part="1" 
+F 0 "R32" V 4050 2150 50  0000 C CNN
+F 1 "rled" V 4050 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 1950 50  0001 C CNN
+F 3 "~" H 4100 1950 50  0001 C CNN
+	1    4100 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 1950 4200 1950
+$Comp
+L Device:R_Small R?
+U 1 1 5E461413
+P 4100 2050
+AR Path="/5E359009/5E461413" Ref="R?"  Part="1" 
+AR Path="/5E38B78E/5E461413" Ref="R33"  Part="1" 
+F 0 "R33" V 4050 2250 50  0000 C CNN
+F 1 "rled" V 4050 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 2050 50  0001 C CNN
+F 3 "~" H 4100 2050 50  0001 C CNN
+	1    4100 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 2050 4200 2050
+$Comp
+L Device:R_Small R?
+U 1 1 5E462330
+P 4100 2150
+AR Path="/5E359009/5E462330" Ref="R?"  Part="1" 
+AR Path="/5E38B78E/5E462330" Ref="R34"  Part="1" 
+F 0 "R34" V 4050 2350 50  0000 C CNN
+F 1 "rled" V 4050 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 2150 50  0001 C CNN
+F 3 "~" H 4100 2150 50  0001 C CNN
+	1    4100 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 2150 4200 2150
+$Comp
+L Device:R_Small R?
+U 1 1 5E46233D
+P 4100 2250
+AR Path="/5E359009/5E46233D" Ref="R?"  Part="1" 
+AR Path="/5E38B78E/5E46233D" Ref="R35"  Part="1" 
+F 0 "R35" V 4050 2450 50  0000 C CNN
+F 1 "rled" V 4050 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 2250 50  0001 C CNN
+F 3 "~" H 4100 2250 50  0001 C CNN
+	1    4100 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 2250 4200 2250
+Wire Wire Line
+	2850 1550 3750 1550
+Wire Wire Line
+	2850 1650 3700 1650
+Wire Wire Line
+	2850 1750 3650 1750
+Wire Wire Line
+	2850 1850 3600 1850
+Wire Wire Line
+	2850 1950 3550 1950
+Wire Wire Line
+	2850 2050 3500 2050
+Wire Wire Line
+	2850 2150 3450 2150
+Wire Wire Line
+	2850 2250 3400 2250
+Connection ~ 5050 2250
+Wire Wire Line
+	5050 2350 5050 2250
+$Comp
+L power:GND #PWR0204
+U 1 1 5EA60C5E
+P 5050 2350
+F 0 "#PWR0204" H 5050 2100 50  0001 C CNN
+F 1 "GND" H 5055 2177 50  0000 C CNN
+F 2 "" H 5050 2350 50  0001 C CNN
+F 3 "" H 5050 2350 50  0001 C CNN
+	1    5050 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2150 5050 2250
+Connection ~ 5050 2150
+Wire Wire Line
+	5050 2050 5050 2150
+Connection ~ 5050 2050
+Wire Wire Line
+	5050 1950 5050 2050
+Connection ~ 5050 1950
+Wire Wire Line
+	5050 1850 5050 1950
+Connection ~ 5050 1850
+Wire Wire Line
+	5050 1750 5050 1850
+Connection ~ 5050 1750
+Wire Wire Line
+	5050 1650 5050 1750
+Connection ~ 5050 1650
+Wire Wire Line
+	5050 1550 5050 1650
+Wire Wire Line
+	4650 2250 5050 2250
+Wire Wire Line
+	4650 2150 5050 2150
+$Comp
+L Device:LED_Small D?
+U 1 1 5E462343
+P 4550 2250
+AR Path="/5E359009/5E462343" Ref="D?"  Part="1" 
+AR Path="/5E38B78E/5E462343" Ref="D35"  Part="1" 
+F 0 "D35" H 4650 2200 50  0000 C CNN
+F 1 "LED_Small" H 4300 2200 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4550 2250 50  0001 C CNN
+F 3 "~" V 4550 2250 50  0001 C CNN
+	1    4550 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5E462336
+P 4550 2150
+AR Path="/5E359009/5E462336" Ref="D?"  Part="1" 
+AR Path="/5E38B78E/5E462336" Ref="D34"  Part="1" 
+F 0 "D34" H 4650 2100 50  0000 C CNN
+F 1 "LED_Small" H 4300 2100 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4550 2150 50  0001 C CNN
+F 3 "~" V 4550 2150 50  0001 C CNN
+	1    4550 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 2050 5050 2050
+Wire Wire Line
+	4650 1950 5050 1950
+$Comp
+L Device:LED_Small D?
+U 1 1 5E461419
+P 4550 2050
+AR Path="/5E359009/5E461419" Ref="D?"  Part="1" 
+AR Path="/5E38B78E/5E461419" Ref="D33"  Part="1" 
+F 0 "D33" H 4650 2000 50  0000 C CNN
+F 1 "LED_Small" H 4300 2000 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4550 2050 50  0001 C CNN
+F 3 "~" V 4550 2050 50  0001 C CNN
+	1    4550 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5E46140C
+P 4550 1950
+AR Path="/5E359009/5E46140C" Ref="D?"  Part="1" 
+AR Path="/5E38B78E/5E46140C" Ref="D32"  Part="1" 
+F 0 "D32" H 4650 1900 50  0000 C CNN
+F 1 "LED_Small" H 4300 1900 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4550 1950 50  0001 C CNN
+F 3 "~" V 4550 1950 50  0001 C CNN
+	1    4550 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 1850 5050 1850
+Wire Wire Line
+	4650 1750 5050 1750
+$Comp
+L Device:LED_Small D?
+U 1 1 5E4601C1
+P 4550 1850
+AR Path="/5E359009/5E4601C1" Ref="D?"  Part="1" 
+AR Path="/5E38B78E/5E4601C1" Ref="D31"  Part="1" 
+F 0 "D31" H 4650 1800 50  0000 C CNN
+F 1 "LED_Small" H 4300 1800 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4550 1850 50  0001 C CNN
+F 3 "~" V 4550 1850 50  0001 C CNN
+	1    4550 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5E4601B4
+P 4550 1750
+AR Path="/5E359009/5E4601B4" Ref="D?"  Part="1" 
+AR Path="/5E38B78E/5E4601B4" Ref="D30"  Part="1" 
+F 0 "D30" H 4650 1700 50  0000 C CNN
+F 1 "LED_Small" H 4300 1700 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4550 1750 50  0001 C CNN
+F 3 "~" V 4550 1750 50  0001 C CNN
+	1    4550 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 1650 5050 1650
+$Comp
+L Device:LED_Small D?
+U 1 1 5E45EB37
+P 4550 1650
+AR Path="/5E359009/5E45EB37" Ref="D?"  Part="1" 
+AR Path="/5E38B78E/5E45EB37" Ref="D29"  Part="1" 
+F 0 "D29" H 4650 1600 50  0000 C CNN
+F 1 "LED_Small" H 4300 1600 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 4550 1650 50  0001 C CNN
+F 3 "~" V 4550 1650 50  0001 C CNN
+	1    4550 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 5E3B5E6A
+P 4100 2800
+F 0 "J3" H 4180 2792 50  0000 L CNN
+F 1 "Conn_01x08" H 4180 2701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 4100 2800 50  0001 C CNN
+F 3 "~" H 4100 2800 50  0001 C CNN
+	1    4100 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2500 3750 2500
+Wire Wire Line
+	3750 2500 3750 1550
+Connection ~ 3750 1550
+Wire Wire Line
+	3750 1550 4000 1550
+Wire Wire Line
+	3700 1650 3700 2600
+Wire Wire Line
+	3700 2600 3900 2600
+Connection ~ 3700 1650
+Wire Wire Line
+	3700 1650 4000 1650
+Wire Wire Line
+	3900 2700 3650 2700
+Wire Wire Line
+	3650 2700 3650 1750
+Connection ~ 3650 1750
+Wire Wire Line
+	3650 1750 4000 1750
+Wire Wire Line
+	3600 1850 3600 2800
+Wire Wire Line
+	3600 2800 3900 2800
+Connection ~ 3600 1850
+Wire Wire Line
+	3600 1850 4000 1850
+Wire Wire Line
+	3900 2900 3550 2900
+Wire Wire Line
+	3550 2900 3550 1950
+Connection ~ 3550 1950
+Wire Wire Line
+	3550 1950 4000 1950
+Wire Wire Line
+	3500 2050 3500 3000
+Wire Wire Line
+	3500 3000 3900 3000
+Connection ~ 3500 2050
+Wire Wire Line
+	3500 2050 4000 2050
+Wire Wire Line
+	3900 3100 3450 3100
+Wire Wire Line
+	3450 3100 3450 2150
+Connection ~ 3450 2150
+Wire Wire Line
+	3450 2150 4000 2150
+Wire Wire Line
+	3400 2250 3400 3200
+Wire Wire Line
+	3400 3200 3900 3200
+Connection ~ 3400 2250
+Wire Wire Line
+	3400 2250 4000 2250
+Text HLabel 1400 2450 0    50   Input ~ 0
+LatchOutput
+Wire Wire Line
+	2400 1150 2350 1150
+Wire Wire Line
+	2350 1150 2350 1250
+Wire Wire Line
+	2350 1150 2350 1000
+Connection ~ 2350 1150
+$Comp
+L power:+5V #PWR?
+U 1 1 5E42CB2C
+P 2350 1000
+AR Path="/5E362800/5E42CB2C" Ref="#PWR?"  Part="1" 
+AR Path="/5E38B78E/5E42CB2C" Ref="#PWR0200"  Part="1" 
+F 0 "#PWR0200" H 2350 850 50  0001 C CNN
+F 1 "+5V" H 2365 1173 50  0000 C CNN
+F 2 "" H 2350 1000 50  0001 C CNN
+F 3 "" H 2350 1000 50  0001 C CNN
+	1    2350 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1150 2650 1150
+Wire Wire Line
+	2650 1150 2650 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5E42CB34
+P 2650 1200
+AR Path="/5E362800/5E42CB34" Ref="#PWR?"  Part="1" 
+AR Path="/5E38B78E/5E42CB34" Ref="#PWR0201"  Part="1" 
+F 0 "#PWR0201" H 2650 950 50  0001 C CNN
+F 1 "GND" H 2655 1027 50  0000 C CNN
+F 2 "" H 2650 1200 50  0001 C CNN
+F 3 "" H 2650 1200 50  0001 C CNN
+	1    2650 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E42CB3A
+P 2350 2900
+AR Path="/5E362800/5E42CB3A" Ref="#PWR?"  Part="1" 
+AR Path="/5E38B78E/5E42CB3A" Ref="#PWR0202"  Part="1" 
+F 0 "#PWR0202" H 2350 2650 50  0001 C CNN
+F 1 "GND" H 2355 2727 50  0000 C CNN
+F 2 "" H 2350 2900 50  0001 C CNN
+F 3 "" H 2350 2900 50  0001 C CNN
+	1    2350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2900 2350 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5E42CB41
+P 1800 2650
+AR Path="/5E362800/5E42CB41" Ref="#PWR?"  Part="1" 
+AR Path="/5E38B78E/5E42CB41" Ref="#PWR0203"  Part="1" 
+F 0 "#PWR0203" H 1800 2400 50  0001 C CNN
+F 1 "GND" H 1805 2477 50  0000 C CNN
+F 2 "" H 1800 2650 50  0001 C CNN
+F 3 "" H 1800 2650 50  0001 C CNN
+	1    1800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2650 1800 2550
+Wire Wire Line
+	1800 2550 1850 2550
+Wire Wire Line
+	1850 2450 1400 2450
+Wire Wire Line
+	1850 1550 1400 1550
+Wire Wire Line
+	1850 1650 1400 1650
+Wire Wire Line
+	1850 1750 1400 1750
+Wire Wire Line
+	1850 1850 1400 1850
+Wire Wire Line
+	1850 1950 1400 1950
+Wire Wire Line
+	1850 2050 1400 2050
+Wire Wire Line
+	1850 2150 1400 2150
+Wire Wire Line
+	1850 2250 1400 2250
+$Comp
+L 74xx:74LS574 U?
+U 1 1 5E42CB04
+P 2350 2050
+AR Path="/5E362800/5E42CB04" Ref="U?"  Part="1" 
+AR Path="/5E38B78E/5E42CB04" Ref="U43"  Part="1" 
+F 0 "U43" H 2100 2750 50  0000 C CNN
+F 1 "74LS574" H 2000 2850 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 2350 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS574" H 2350 2050 50  0001 C CNN
+	1    2350 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E42CB22
+P 2500 1150
+AR Path="/5E362800/5E42CB22" Ref="C?"  Part="1" 
+AR Path="/5E38B78E/5E42CB22" Ref="C45"  Part="1" 
+F 0 "C45" V 2400 1150 50  0000 C CNN
+F 1 "0u1" V 2600 1100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2500 1150 50  0001 C CNN
+F 3 "~" H 2500 1150 50  0001 C CNN
+	1    2500 1150
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
