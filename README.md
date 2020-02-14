@@ -1,11 +1,16 @@
 # SA-ADC
-##### Philipp Schilk
----
+### Philipp Schilk
 A discrete Successive-Approximation ADC built purely from discrete 74-series gates.
 
 Built to understand SA-ADCs, and possibly serve as a demonstration unit.
 
 ![PCB v0.0 Render](https://raw.githubusercontent.com/TheSchilk/SA-ADC/master/Doc/SA-ADC_PCBrender_v0.0.jpg)
+
+## Status
+Currently waiting on first prototype.
+
+*Design is **untested**!*
+
 
 ## Specifications
 | Specification  | Value  |
