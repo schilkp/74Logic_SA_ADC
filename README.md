@@ -26,6 +26,22 @@ Currently waiting on first prototype.
 As this is a demonstration Unit only really meant for constant inputs, no Sample-&-Hold
 circuit is include.
 
+## Overview
+
+**Doc:**
+	Documentation
+
+**Gerber:**
+	Gerber Files for PCB Manufacture
+
+**KiCad:**
+    KiCad Project Files (Schematic and PCB).
+    Download KiCad at [kicad-pcb.org](https://kicad-pcb.org/download/).
+
+**Logisim:**
+	Logic Simulation.
+	Download LogiSim at [cburch.com](http://www.cburch.com/logisim/).
+
 ## Successive Approximation Architecture
 
 This Project uses the classic DAC-based Successive Approximation Architecture [[Wikipedia](https://en.wikipedia.org/wiki/Successive_approximation_ADC "DAC-based Successive Approxmation Architecture")].
