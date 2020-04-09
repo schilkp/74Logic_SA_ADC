@@ -102,7 +102,7 @@ Wire Wire Line
 Text Notes 4850 1150 0    50   ~ 0
 Vout = aprox 6.2V
 Text Notes 5900 1500 0    50   ~ 0
-OpAmp used as comparator\n needs supply slightly higher than 5v to compare signals close / at 5v.\n\nSpecific voltage was choosen, as it both enabled comparing accross\nthe whole 0-5v band, and resulted in the opamp outputing around 5V as\nlogic-high. (Output of Opamp ist at max aprox. 1.2-1.3 V lower than Supply Voltage)
+OpAmp used as comparator\nneeds supply slightly higher than 5v to compare signals close to / at 5v.\n\nSpecific voltage was choosen as it both enabled comparing accross\nthe whole 0-5v band, and resulted in the opamp outputing around 5V as\nlogic-high. (Output of Opamp ist at max aprox. 1.2-1.3 V lower than Supply Voltage)
 $Comp
 L power:GND #PWR0192
 U 1 1 5E388AB8
