@@ -24,7 +24,7 @@ Currently waiting on first prototype.
 | Output | 8-bit parallel |
 
 As this is a demonstration Unit only really meant for constant inputs, no Sample-&-Hold
-circuit is include.
+circuit is included.
 
 ## Overview
 
