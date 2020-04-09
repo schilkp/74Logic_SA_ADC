@@ -757,7 +757,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 4450 5300 4550
 Wire Wire Line
-	5300 4550 4850 4550
+	5300 4550 5050 4550
 Wire Wire Line
 	4850 4550 4850 4450
 $Comp
@@ -822,4 +822,22 @@ Text Notes 5650 3050 0    50   ~ 0
 CLK Enable Jumper
 Text Notes 4000 5400 0    50   ~ 0
 Clock derived from 555 timer may be connected to state machine using JP1.\n\nSW2 may be used to manually generate a clock pulse regardless of the position of JP1.
+$Comp
+L power:GND #PWR?
+U 1 1 5E8F5097
+P 5050 4650
+AR Path="/5E359009/5E8F5097" Ref="#PWR?"  Part="1" 
+AR Path="/5E356AC1/5E8F5097" Ref="#PWR0233"  Part="1" 
+F 0 "#PWR0233" H 5050 4400 50  0001 C CNN
+F 1 "GND" H 5055 4477 50  0000 C CNN
+F 2 "" H 5050 4650 50  0001 C CNN
+F 3 "" H 5050 4650 50  0001 C CNN
+	1    5050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4650 5050 4550
+Connection ~ 5050 4550
+Wire Wire Line
+	5050 4550 4850 4550
 $EndSCHEMATC
