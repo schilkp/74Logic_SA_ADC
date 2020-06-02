@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 11
+Sheet 9 9
 Title "Schilk_SA-ADC"
 Date "2020-02-03"
 Rev "v0.0 (Prod.)"
@@ -172,4 +172,6 @@ F 3 "" H 5450 3850 50  0001 C CNN
 $EndComp
 Text HLabel 6200 3450 2    50   Input ~ 0
 VIN
+Text Notes 3150 5050 0    50   ~ 0
+SW1 Allows selection between the internal potentiometer or an\nexternal voltage input to be fed to the ADC.
 $EndSCHEMATC
