@@ -995,5 +995,5 @@ Connection ~ 3300 2050
 Wire Wire Line
 	3300 2050 3300 2100
 Text Notes 6600 4500 0    50   ~ 0
-Generates the Sequental Signals that decide the state of the converter.\n\nD-FlipFlop U29 essentially provides a 9th stage to the shift register U28\n\nNOR Gates U30 and U31 enable the shift-in signal of the register once the first 8 stages are empty. \n\nDuring operation it would be sufficient to tie STATE7 to the shift-in, but this circuit ensures proper \noperation of the state machine after at most 1 cycle through all states, no matter what the initial\nvalue of the register after power up is.
+Generates the Sequental Signals that decide the state of the converter.\n\nD-FlipFlop U29 essentially provides a 9th stage to the shift register U28\n\nNOR Gates U30 and U31 enable the shift-in signal of the register once the first 8 stages are empty. \n\nDuring operation it would be sufficient to tie STATE7 to the shift-in, but this circuit ensures proper \noperation of the state machine after at most 1 cycle through all states, no matter what the initial\nvalue of the register after power up is.\n\nThis shift register operates on the falling edge of the clock. This avoids race conditions:\n\nAll signals are set up by the state machine on the falling clock edge,\nand are latched into the registers on the rising clock.
 $EndSCHEMATC
