@@ -823,4 +823,28 @@ Text Notes 3250 5200 0    50   ~ 0
 R2R DAC generates the reference voltage dictated by\nthe SA Register and Statemachine. This voltage is then \ncompared to the input voltage.
 Connection ~ 8700 2200
 Connection ~ 9350 3000
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EDEDF38
+P 8900 4250
+F 0 "TP?" H 8842 4276 50  0000 R CNN
+F 1 "GND" H 8842 4367 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 9100 4250 50  0001 C CNN
+F 3 "~" H 9100 4250 50  0001 C CNN
+	1    8900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EDF1597
+P 8900 4350
+F 0 "#PWR?" H 8900 4100 50  0001 C CNN
+F 1 "GND" H 8905 4177 50  0000 C CNN
+F 2 "" H 8900 4350 50  0001 C CNN
+F 3 "" H 8900 4350 50  0001 C CNN
+	1    8900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 4350 8900 4250
 $EndSCHEMATC
