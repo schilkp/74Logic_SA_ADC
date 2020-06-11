@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7050 7550 2    50   Output ~ 0
+Text HLabel 7050 7500 2    50   Output ~ 0
 DAC_0
 Text HLabel 7050 6900 2    50   Output ~ 0
 DAC_1
@@ -820,7 +820,7 @@ Text HLabel 1800 1600 0    50   Input ~ 0
 Comp_State
 Wire Wire Line
 	2400 10450 2400 10600
-Text HLabel 6850 7550 0    50   Input ~ 0
+Text HLabel 6850 7500 0    50   Input ~ 0
 STATE0
 Text HLabel 1550 3600 0    50   Input ~ 0
 STATE1
@@ -1543,7 +1543,7 @@ RST
 Wire Wire Line
 	4200 1500 4200 1450
 Wire Wire Line
-	6850 7550 7050 7550
+	6850 7500 7050 7500
 Wire Wire Line
 	4050 1200 3800 1200
 Text Label 3800 1200 0    50   ~ 0
