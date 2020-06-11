@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title "Schilk_SA-ADC"
-Date ""
-Rev ""
+Date "2020-06-11"
+Rev "v0.1"
 Comp "Philipp Schilk"
 Comment1 ""
 Comment2 ""

@@ -12,6 +12,8 @@
   (page A4)
   (title_block
     (title SA-ADC)
+    (date 2020-06-11)
+    (rev v0.1)
   )
 
   (layers
@@ -38,7 +40,7 @@
   )
 
   (setup
-    (last_trace_width 0.6)
+    (last_trace_width 0.25)
     (user_trace_width 0.6)
     (trace_clearance 0.1)
     (zone_clearance 0.254)
@@ -10792,7 +10794,7 @@
   (segment (start 137.4775 97.125001) (end 137.485 97.117501) (width 0.25) (layer F.Cu) (net 132) (status 30))
   (segment (start 137.485 97.117501) (end 136.835 97.117501) (width 0.25) (layer F.Cu) (net 132))
 
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5EE34B4D) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5EE4015E) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -13413,7 +13415,7 @@
       )
     )
   )
-  (zone (net 2) (net_name +5V) (layer B.Cu) (tstamp 5EE34B4A) (hatch edge 0.508)
+  (zone (net 2) (net_name +5V) (layer B.Cu) (tstamp 5EE4015B) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))

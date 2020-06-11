@@ -814,7 +814,7 @@ Text HLabel 6600 8600 2    50   Input ~ 0
 OUT_1
 Text HLabel 6600 8900 2    50   Input ~ 0
 OUT_0
-Text Notes 550  8750 0    50   ~ 0
+Text Notes 650  8750 0    50   ~ 0
 Register U24 stores the intermediate conversion\nresults. It latches a new value on every clock cycle.\n\nThe 7 MUXes normally keep the the output of the\nregister connected to the input, maintaining the \nvalue, but allow for a single bit to be updated.\n\nThe OR gates on the right pass the current state\nof the register to the DAC, but also allows the \nstate machine to 'test' a single bit as part of the\nSA algorithm.\n
 Text HLabel 1800 1600 0    50   Input ~ 0
 Comp_State
