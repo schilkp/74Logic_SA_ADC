@@ -437,24 +437,15 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7600 3200 50  0001 C CNN
 	2    7600 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7300 3100 7250 3100
-Wire Wire Line
-	7250 3100 7250 3300
-Wire Wire Line
-	7250 3300 7300 3300
-Wire Wire Line
-	7250 3300 7250 3400
-Connection ~ 7250 3300
 $Comp
 L power:GND #PWR0172
 U 1 1 5E49D036
-P 7250 3400
-F 0 "#PWR0172" H 7250 3150 50  0001 C CNN
-F 1 "GND" H 7255 3227 50  0000 C CNN
-F 2 "" H 7250 3400 50  0001 C CNN
-F 3 "" H 7250 3400 50  0001 C CNN
-	1    7250 3400
+P 7150 3150
+F 0 "#PWR0172" H 7150 2900 50  0001 C CNN
+F 1 "GND" H 7155 2977 50  0000 C CNN
+F 2 "" H 7150 3150 50  0001 C CNN
+F 3 "" H 7150 3150 50  0001 C CNN
+	1    7150 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -646,7 +637,6 @@ F 3 "" H 8700 2200 50  0001 C CNN
 	1    8700 2200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7900 3200
 Text HLabel 8700 2500 2    50   Input ~ 0
 COMP_OUT
 $Comp
@@ -820,14 +810,14 @@ $EndComp
 Wire Wire Line
 	2800 2400 2850 2400
 Text Notes 3250 5200 0    50   ~ 0
-R2R DAC generates the reference voltage dictated by\nthe SA Register and Statemachine. This voltage is then \ncompared to the input voltage.
+R2R DAC generates the reference voltage dictated by\nthe SA Register and state machine. This voltage is then \ncompared to the input voltage.
 Connection ~ 8700 2200
 Connection ~ 9350 3000
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP4
 U 1 1 5EDEDF38
 P 8900 4250
-F 0 "TP?" H 8842 4276 50  0000 R CNN
+F 0 "TP4" H 8842 4276 50  0000 R CNN
 F 1 "GND" H 8842 4367 50  0000 R CNN
 F 2 "TestPoint:TestPoint_Keystone_5019_Minature" H 9100 4250 50  0001 C CNN
 F 3 "~" H 9100 4250 50  0001 C CNN
@@ -835,10 +825,10 @@ F 3 "~" H 9100 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0216
 U 1 1 5EDF1597
 P 8900 4350
-F 0 "#PWR?" H 8900 4100 50  0001 C CNN
+F 0 "#PWR0216" H 8900 4100 50  0001 C CNN
 F 1 "GND" H 8905 4177 50  0000 C CNN
 F 2 "" H 8900 4350 50  0001 C CNN
 F 3 "" H 8900 4350 50  0001 C CNN
@@ -847,4 +837,14 @@ F 3 "" H 8900 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 4350 8900 4250
+Wire Wire Line
+	7150 3100 7150 3150
+Wire Wire Line
+	7150 3100 7300 3100
+Wire Wire Line
+	7300 3300 7300 3500
+Wire Wire Line
+	7300 3500 7900 3500
+Wire Wire Line
+	7900 3500 7900 3200
 $EndSCHEMATC

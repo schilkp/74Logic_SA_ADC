@@ -31,39 +31,6 @@ F11 "COMP_OUT" I R 6300 1100 50
 $EndSheet
 Wire Wire Line
 	2450 1100 2250 1100
-$Sheet
-S 3950 1000 900  2100
-U 5E362800
-F0 "SA-Register.sch" 50
-F1 "SA-Register.sch" 50
-F2 "OUT_0" I R 4850 2300 50 
-F3 "OUT_1" I R 4850 2400 50 
-F4 "OUT_2" I R 4850 2500 50 
-F5 "OUT_3" I R 4850 2600 50 
-F6 "OUT_4" I R 4850 2700 50 
-F7 "OUT_5" I R 4850 2800 50 
-F8 "OUT_6" I R 4850 2900 50 
-F9 "OUT_7" I R 4850 3000 50 
-F10 "Comp_State" I L 3950 1100 50 
-F11 "DAC_0" O R 4850 1100 50 
-F12 "DAC_1" O R 4850 1200 50 
-F13 "DAC_4" O R 4850 1500 50 
-F14 "DAC_5" O R 4850 1600 50 
-F15 "DAC_6" O R 4850 1700 50 
-F16 "DAC_3" O R 4850 1400 50 
-F17 "DAC_2" O R 4850 1300 50 
-F18 "STATE0" I L 3950 2100 50 
-F19 "STATE1" I L 3950 2200 50 
-F20 "STATE2" I L 3950 2300 50 
-F21 "STATE3" I L 3950 2400 50 
-F22 "STATE4" I L 3950 2500 50 
-F23 "STATE5" I L 3950 2600 50 
-F24 "STATE6" I L 3950 2700 50 
-F25 "STATE7" I L 3950 2800 50 
-F26 "CLK" I L 3950 1200 50 
-F27 "STATE_RST" I L 3950 2000 50 
-F28 "DAC_7" O R 4850 1800 50 
-$EndSheet
 Wire Wire Line
 	4850 1100 5450 1100
 Wire Wire Line
@@ -133,8 +100,8 @@ F0 "Clock" 50
 F1 "Clock.sch" 50
 F2 "CLK" O R 2050 1100 50 
 $EndSheet
-Text Notes 7350 4100 0    50   ~ 0
-Implemented to learn about/demonstrate the workings of this \nADC Architecture, not to design an effective ADC.\n\nSheets/Breakdown:\n\nPWR:\n     Power Input & Voltage Regulation\n\nInput:\n     Analog Voltage Input to the ADC\n\nClock:\n     NE555 based Clock used to drive State machine. Adjustable\n     in Frequency from approx. 1Hz to 400Hz\n\nState Machine:\n     The State machine that sequences the conversion.\n\nSA-Register:\n    The Successive-Approximation (SA) Register used during      \n     conversion.\n\nAnalog:\n     The Analog-domain section of the ADC. This includes the comparator and the \n     DAC: An R2R DAC fed by the binary output of the SA-Register. This output is\n     buffered to remove switching noise. \n\nOutput:\n     The output register into which the result is latched once a    \n     conversion finishes. Also contains a simple binary Display of the final \n     conversion result.\n\n\n
+Text Notes 7350 4200 0    50   ~ 0
+Implemented to learn about/demonstrate the workings of this \nADC Architecture, not to design an effective ADC.\n\nSheets/Breakdown:\n\nPWR:\n    Power Input & Voltage Regulation\n\nInput:\n    Analog Voltage Input to the ADC\n\nClock:\n    NE555-based clock used to drive state machine. Adjustable\n    in Frequency from approx. 1Hz to 170Hz\n\nState Machine:\n    The State machine that sequences the conversion.\n\nSA-Register:\n    The Successive-Approximation (SA) Register used during     \n    conversion.\n\nAnalog:\n    The Analog-domain section of the ADC. This includes the comparator and the \n    DAC: An R2R DAC fed by the output of the SA-Register and the state machine. \n	This output is buffered to remove switching noise. \n\nOutput:\n    The output register into which the result is latched once a    \n    conversion finishes. Also contains a simple binary Display of the final \n    conversion result.\n\n\n\n\n
 Text Notes 7350 1300 0    100  ~ 20
 A Discrete \nSuccessive-Approximation-ADC\n
 $Sheet
@@ -143,14 +110,14 @@ U 5E356A03
 F0 "StateMaschine.sch" 50
 F1 "StateMaschine.sch" 50
 F2 "CLK" I L 2450 1100 50 
-F3 "STATE0" O R 3350 2100 50 
-F4 "STATE1" O R 3350 2200 50 
-F5 "STATE2" O R 3350 2300 50 
-F6 "STATE3" O R 3350 2400 50 
-F7 "STATE4" O R 3350 2500 50 
-F8 "STATE5" O R 3350 2600 50 
-F9 "STATE6" O R 3350 2700 50 
-F10 "STATE7" O R 3350 2800 50 
+F3 "STATE0" O R 3350 2800 50 
+F4 "STATE1" O R 3350 2700 50 
+F5 "STATE2" O R 3350 2600 50 
+F6 "STATE3" O R 3350 2500 50 
+F7 "STATE4" O R 3350 2400 50 
+F8 "STATE5" O R 3350 2300 50 
+F9 "STATE6" O R 3350 2200 50 
+F10 "STATE7" O R 3350 2100 50 
 F11 "STATE_RST" O R 3350 2000 50 
 $EndSheet
 Wire Wire Line
@@ -217,4 +184,37 @@ F2 "VIN" I R 4850 3800 50
 $EndSheet
 Wire Wire Line
 	4850 3800 5150 3800
+$Sheet
+S 3950 1000 900  2100
+U 5E362800
+F0 "SA-Register.sch" 50
+F1 "SA-Register.sch" 50
+F2 "OUT_0" I R 4850 2300 50 
+F3 "OUT_1" I R 4850 2400 50 
+F4 "OUT_2" I R 4850 2500 50 
+F5 "OUT_3" I R 4850 2600 50 
+F6 "OUT_4" I R 4850 2700 50 
+F7 "OUT_5" I R 4850 2800 50 
+F8 "OUT_6" I R 4850 2900 50 
+F9 "OUT_7" I R 4850 3000 50 
+F10 "Comp_State" I L 3950 1100 50 
+F11 "DAC_0" O R 4850 1100 50 
+F12 "DAC_1" O R 4850 1200 50 
+F13 "DAC_4" O R 4850 1500 50 
+F14 "DAC_5" O R 4850 1600 50 
+F15 "DAC_6" O R 4850 1700 50 
+F16 "DAC_3" O R 4850 1400 50 
+F17 "DAC_2" O R 4850 1300 50 
+F18 "STATE0" I L 3950 2800 50 
+F19 "STATE1" I L 3950 2700 50 
+F20 "STATE2" I L 3950 2600 50 
+F21 "STATE3" I L 3950 2500 50 
+F22 "STATE4" I L 3950 2400 50 
+F23 "STATE5" I L 3950 2300 50 
+F24 "STATE6" I L 3950 2200 50 
+F25 "STATE7" I L 3950 2100 50 
+F26 "CLK" I L 3950 1200 50 
+F27 "STATE_RST" I L 3950 2000 50 
+F28 "DAC_7" O R 4850 1800 50 
+$EndSheet
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 4 9
+Sheet 9 9
 Title "Schilk_SA-ADC"
 Date "2020-02-03"
 Rev "v0.0 (Prod.)"
@@ -13,15 +13,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7050 1550 2    50   Output ~ 0
+Text HLabel 7050 7550 2    50   Output ~ 0
 DAC_0
-Text HLabel 7050 2450 2    50   Output ~ 0
-DAC_1
-Text HLabel 7050 5100 2    50   Output ~ 0
-DAC_4
-Text HLabel 7050 6000 2    50   Output ~ 0
-DAC_5
 Text HLabel 7050 6900 2    50   Output ~ 0
+DAC_1
+Text HLabel 7050 4250 2    50   Output ~ 0
+DAC_4
+Text HLabel 7050 3350 2    50   Output ~ 0
+DAC_5
+Text HLabel 7050 2450 2    50   Output ~ 0
 DAC_6
 $Comp
 L 74xGxx:74LVC1G32 U5
@@ -513,9 +513,9 @@ F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 6700 3350 50  0001 C CNN
 	1    6700 3350
 	1    0    0    -1  
 $EndComp
-Text HLabel 7050 4250 2    50   Output ~ 0
+Text HLabel 7050 5100 2    50   Output ~ 0
 DAC_3
-Text HLabel 7050 3350 2    50   Output ~ 0
+Text HLabel 7050 6000 2    50   Output ~ 0
 DAC_2
 Text Label 1000 10450 0    50   ~ 0
 Q6
@@ -798,71 +798,43 @@ F 3 "" H 2400 10600 50  0001 C CNN
 	1    2400 10600
 	1    0    0    -1  
 $EndComp
-Text HLabel 6600 8900 2    50   Input ~ 0
-OUT_7
-Text HLabel 6600 8600 2    50   Input ~ 0
-OUT_6
-Text HLabel 6600 8500 2    50   Input ~ 0
-OUT_5
-Text HLabel 6600 8400 2    50   Input ~ 0
-OUT_4
-Text HLabel 6600 8300 2    50   Input ~ 0
-OUT_3
-Text HLabel 6600 8200 2    50   Input ~ 0
-OUT_2
-Text HLabel 6600 8100 2    50   Input ~ 0
-OUT_1
 Text HLabel 6600 8000 2    50   Input ~ 0
+OUT_7
+Text HLabel 6600 8100 2    50   Input ~ 0
+OUT_6
+Text HLabel 6600 8200 2    50   Input ~ 0
+OUT_5
+Text HLabel 6600 8300 2    50   Input ~ 0
+OUT_4
+Text HLabel 6600 8400 2    50   Input ~ 0
+OUT_3
+Text HLabel 6600 8500 2    50   Input ~ 0
+OUT_2
+Text HLabel 6600 8600 2    50   Input ~ 0
+OUT_1
+Text HLabel 6600 8900 2    50   Input ~ 0
 OUT_0
-Text Label 6350 8600 0    50   ~ 0
-Q6
-Text Label 6350 8500 0    50   ~ 0
-Q5
-Text Label 6350 8400 0    50   ~ 0
-Q4
-Text Label 6350 8300 0    50   ~ 0
-Q3
-Text Label 6350 8200 0    50   ~ 0
-Q2
-Text Label 6350 8100 0    50   ~ 0
-Q1
-Text Label 6350 8000 0    50   ~ 0
-Q0
-Wire Wire Line
-	6300 8000 6600 8000
-Wire Wire Line
-	6300 8100 6600 8100
-Wire Wire Line
-	6300 8200 6600 8200
-Wire Wire Line
-	6300 8300 6600 8300
-Wire Wire Line
-	6300 8400 6600 8400
-Wire Wire Line
-	6300 8500 6600 8500
-Wire Wire Line
-	6300 8600 6600 8600
 Text Notes 550  8750 0    50   ~ 0
-Register U24 stores the intermediate conversion\nresults. It latches a new value on every clock cycle.\n\nThe 7 MUXes normally keep the the output of the\nregister connected to the input, maintaining the \nvalue, but allow for a single bit to be updated.\n\nThe OR gates on the write pass the current state\nof the register to the DAC, but also allows the \nstate machine to 'test' a single bit as part of the\nSA algorithm.
+Register U24 stores the intermediate conversion\nresults. It latches a new value on every clock cycle.\n\nThe 7 MUXes normally keep the the output of the\nregister connected to the input, maintaining the \nvalue, but allow for a single bit to be updated.\n\nThe OR gates on the right pass the current state\nof the register to the DAC, but also allows the \nstate machine to 'test' a single bit as part of the\nSA algorithm.\n
 Text HLabel 1800 1600 0    50   Input ~ 0
 Comp_State
 Wire Wire Line
 	2400 10450 2400 10600
-Text HLabel 3900 1500 0    50   Input ~ 0
+Text HLabel 6850 7550 0    50   Input ~ 0
 STATE0
-Text HLabel 2850 2700 0    50   Input ~ 0
+Text HLabel 1550 3600 0    50   Input ~ 0
 STATE1
-Text HLabel 2850 3950 0    50   Input ~ 0
+Text HLabel 1550 3500 0    50   Input ~ 0
 STATE2
-Text HLabel 2850 5200 0    50   Input ~ 0
+Text HLabel 1550 3400 0    50   Input ~ 0
 STATE3
-Text HLabel 2850 6400 0    50   Input ~ 0
+Text HLabel 1550 3300 0    50   Input ~ 0
 STATE4
-Text HLabel 2850 7650 0    50   Input ~ 0
+Text HLabel 1550 3200 0    50   Input ~ 0
 STATE5
-Text HLabel 2850 8900 0    50   Input ~ 0
+Text HLabel 1550 3100 0    50   Input ~ 0
 STATE6
-Text HLabel 6650 7450 0    50   Input ~ 0
+Text HLabel 1550 3000 0    50   Input ~ 0
 STATE7
 $Comp
 L 74xx:74LS377 U24
@@ -1566,80 +1538,12 @@ Wire Wire Line
 Wire Wire Line
 	1700 850  1700 950 
 Connection ~ 1700 850 
-Text Label 3850 8550 0    50   ~ 0
-Q6
-Text Label 3850 7300 0    50   ~ 0
-Q5
-Text Label 3850 6050 0    50   ~ 0
-Q4
-Text Label 3850 4850 0    50   ~ 0
-Q3
-Text Label 3850 3600 0    50   ~ 0
-Q2
-Text Label 3850 2350 0    50   ~ 0
-Q1
-Text Label 3800 1100 0    50   ~ 0
-Q0
-Wire Wire Line
-	3800 1100 4050 1100
-Wire Wire Line
-	3850 2350 4050 2350
-Wire Wire Line
-	3850 3600 4050 3600
-Wire Wire Line
-	3850 4850 4050 4850
-Wire Wire Line
-	3850 6050 4050 6050
-Wire Wire Line
-	3850 7300 4050 7300
-Wire Wire Line
-	3850 8550 4050 8550
-Text Label 4050 1500 2    50   ~ 0
-S0
-Wire Wire Line
-	6400 1500 6250 1500
-Wire Wire Line
-	6400 2400 6250 2400
-Wire Wire Line
-	6400 4200 6250 4200
-Wire Wire Line
-	6400 5050 6250 5050
-Wire Wire Line
-	6400 5950 6250 5950
-Wire Wire Line
-	6400 6850 6250 6850
-Text Label 6250 1500 0    50   ~ 0
-S0
-Text Label 6250 2400 0    50   ~ 0
-S1
-Text Label 6250 4200 0    50   ~ 0
-S3
-Text Label 6250 5050 0    50   ~ 0
-S4
-Text Label 6250 5950 0    50   ~ 0
-S5
-Text Label 6250 6850 0    50   ~ 0
-S6
-Text Label 6250 6950 0    50   ~ 0
-Q6
-Text Label 6250 6050 0    50   ~ 0
-Q5
-Text Label 6250 5150 0    50   ~ 0
-Q4
-Text Label 6250 4300 0    50   ~ 0
-Q3
-Text Label 6250 2500 0    50   ~ 0
-Q1
-Text Label 6250 1600 0    50   ~ 0
-Q0
-Wire Wire Line
-	6250 1600 6400 1600
 Text Label 1350 1050 2    50   ~ 0
 RST
 Wire Wire Line
 	4200 1500 4200 1450
 Wire Wire Line
-	3900 1500 4200 1500
+	6850 7550 7050 7550
 Wire Wire Line
 	4050 1200 3800 1200
 Text Label 3800 1200 0    50   ~ 0
@@ -2096,34 +2000,34 @@ F 3 "" H 2500 1250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2500 1250 2500 1200
-Text Label 2850 2700 0    50   ~ 0
+Text Label 1750 3600 2    50   ~ 0
 S1
 Wire Wire Line
-	2850 2700 3050 2700
-Text Label 2850 3950 0    50   ~ 0
+	1550 3600 1750 3600
+Text Label 1750 3500 2    50   ~ 0
 S2
-Text Label 2850 5200 0    50   ~ 0
+Text Label 1750 3400 2    50   ~ 0
 S3
-Text Label 2850 6400 0    50   ~ 0
+Text Label 1750 3300 2    50   ~ 0
 S4
-Text Label 2850 7650 0    50   ~ 0
+Text Label 1750 3200 2    50   ~ 0
 S5
-Text Label 2850 8900 0    50   ~ 0
+Text Label 1750 3100 2    50   ~ 0
 S6
 Wire Wire Line
-	2850 8900 3050 8900
+	1550 3100 1750 3100
 Wire Wire Line
-	2850 7650 3050 7650
+	1550 3200 1750 3200
 Wire Wire Line
-	2850 6400 3050 6400
+	1550 3300 1750 3300
 Wire Wire Line
-	2850 5200 3050 5200
+	1550 3400 1750 3400
 Wire Wire Line
-	2850 3950 3050 3950
-Text HLabel 6750 7450 2    50   Output ~ 0
+	1550 3500 1750 3500
+Text HLabel 7050 1550 2    50   Output ~ 0
 DAC_7
 Wire Wire Line
-	6750 7450 6650 7450
+	1750 3000 1550 3000
 Wire Wire Line
 	2200 1050 1950 1050
 Wire Wire Line
@@ -2138,12 +2042,12 @@ Wire Wire Line
 	2750 1100 3000 1100
 Text Label 3000 1100 2    50   ~ 0
 D
-Text Label 3850 2450 0    50   ~ 0
+Text Label 3800 2450 0    50   ~ 0
 D
 Wire Wire Line
 	3600 2750 4200 2750
 Wire Wire Line
-	3850 2450 4050 2450
+	3800 2450 4050 2450
 $Comp
 L 74LVC1G157:74LVC1G157 U18
 U 1 1 5F528868
@@ -2155,14 +2059,14 @@ F 3 "" H 3950 1825 50  0001 C CNN
 	1    4250 2400
 	1    0    0    -1  
 $EndComp
-Text Label 3850 3700 0    50   ~ 0
+Text Label 3800 3700 0    50   ~ 0
 D
 Wire Wire Line
-	3850 3700 4050 3700
-Text Label 3850 4950 0    50   ~ 0
+	3800 3700 4050 3700
+Text Label 3800 4950 0    50   ~ 0
 D
 Wire Wire Line
-	3850 4950 4050 4950
+	3800 4950 4050 4950
 Text Label 3850 6150 0    50   ~ 0
 D
 Wire Wire Line
@@ -2214,21 +2118,145 @@ Wire Wire Line
 Wire Wire Line
 	5150 8000 5300 8000
 Wire Wire Line
-	6250 2500 6400 2500
+	6300 8000 6600 8000
 Wire Wire Line
-	6250 3400 6400 3400
+	6300 8100 6600 8100
 Wire Wire Line
-	6250 4300 6400 4300
+	6300 8200 6600 8200
 Wire Wire Line
-	6250 5150 6400 5150
+	6300 8300 6600 8300
 Wire Wire Line
-	6250 6050 6400 6050
+	6300 8400 6600 8400
 Wire Wire Line
-	6250 6950 6400 6950
-Text Label 6250 3400 0    50   ~ 0
+	6300 8500 6600 8500
+Wire Wire Line
+	6300 8600 6600 8600
+Text Label 6400 8600 0    50   ~ 0
+Q1
+Text Label 6400 8500 0    50   ~ 0
 Q2
-Text Label 6250 3300 0    50   ~ 0
-S2
+Text Label 6400 8400 0    50   ~ 0
+Q3
+Text Label 6400 8300 0    50   ~ 0
+Q4
+Text Label 6400 8200 0    50   ~ 0
+Q5
+Text Label 6400 8100 0    50   ~ 0
+Q6
+Text Label 6400 8000 0    50   ~ 0
+Q7
+Text Label 3850 8550 0    50   ~ 0
+Q1
+Text Label 3850 7300 0    50   ~ 0
+Q2
+Text Label 3850 6050 0    50   ~ 0
+Q3
+Text Label 3800 4850 0    50   ~ 0
+Q4
+Text Label 3800 3600 0    50   ~ 0
+Q5
+Text Label 3800 2350 0    50   ~ 0
+Q6
+Text Label 3800 1100 0    50   ~ 0
+Q7
 Wire Wire Line
-	6400 3300 6250 3300
+	4050 1100 3800 1100
+Wire Wire Line
+	4050 2350 3800 2350
+Wire Wire Line
+	4050 3600 3800 3600
+Wire Wire Line
+	4050 4850 3800 4850
+Wire Wire Line
+	4050 6050 3850 6050
+Wire Wire Line
+	4050 7300 3850 7300
+Wire Wire Line
+	4050 8550 3850 8550
+Text Label 1750 3000 2    50   ~ 0
+S7
+Text Label 6150 6950 0    50   ~ 0
+Q1
+Text Label 6150 6050 0    50   ~ 0
+Q2
+Text Label 6150 5150 0    50   ~ 0
+Q3
+Text Label 6150 4300 0    50   ~ 0
+Q4
+Wire Wire Line
+	6150 4300 6400 4300
+Wire Wire Line
+	6150 5150 6400 5150
+Wire Wire Line
+	6150 6050 6400 6050
+Wire Wire Line
+	6150 3400 6400 3400
+Text Label 6150 3400 0    50   ~ 0
+Q5
+Wire Wire Line
+	6150 2500 6400 2500
+Text Label 6150 2500 0    50   ~ 0
+Q6
+Wire Wire Line
+	6150 1600 6400 1600
+Text Label 6150 1600 0    50   ~ 0
+Q7
+Wire Wire Line
+	6150 6950 6400 6950
+Text Label 2850 8900 0    50   ~ 0
+S1
+Wire Wire Line
+	3050 8900 2850 8900
+Text Label 2850 7650 0    50   ~ 0
+S2
+Text Label 2850 6400 0    50   ~ 0
+S3
+Text Label 2850 5200 0    50   ~ 0
+S4
+Text Label 2850 3950 0    50   ~ 0
+S5
+Text Label 2850 2700 0    50   ~ 0
+S6
+Wire Wire Line
+	3050 2700 2850 2700
+Wire Wire Line
+	3050 3950 2850 3950
+Wire Wire Line
+	3050 5200 2850 5200
+Wire Wire Line
+	3050 6400 2850 6400
+Wire Wire Line
+	3050 7650 2850 7650
+Text Label 3800 1500 0    50   ~ 0
+S7
+Wire Wire Line
+	3800 1500 4200 1500
+Text Label 6150 6850 0    50   ~ 0
+S1
+Text Label 6150 5950 0    50   ~ 0
+S2
+Text Label 6150 5050 0    50   ~ 0
+S3
+Text Label 6150 4200 0    50   ~ 0
+S4
+Text Label 6150 3300 0    50   ~ 0
+S5
+Text Label 6150 2400 0    50   ~ 0
+S6
+Text Label 6150 1500 0    50   ~ 0
+S7
+Wire Wire Line
+	6150 1500 6400 1500
+Wire Wire Line
+	6400 2400 6150 2400
+Wire Wire Line
+	6400 3300 6150 3300
+Wire Wire Line
+	6400 4200 6150 4200
+Wire Wire Line
+	6400 5050 6150 5050
+Wire Wire Line
+	6400 5950 6150 5950
+Wire Wire Line
+	6400 6850 6150 6850
 $EndSCHEMATC

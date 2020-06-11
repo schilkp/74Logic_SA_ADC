@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 7 9
 Title "Schilk_SA-ADC"
 Date "2020-02-03"
 Rev "v0.0 (Prod.)"
@@ -15,21 +15,21 @@ Comment4 ""
 $EndDescr
 Text HLabel 1950 2950 0    50   Input ~ 0
 CLK
-Text Label 7500 1700 0    50   ~ 0
-STATE0
-Text Label 7500 1800 0    50   ~ 0
-STATE1
-Text Label 7500 1900 0    50   ~ 0
-STATE2
-Text Label 7500 2000 0    50   ~ 0
-STATE3
-Text Label 7500 2100 0    50   ~ 0
-STATE4
-Text Label 7500 2200 0    50   ~ 0
-STATE5
-Text Label 7500 2300 0    50   ~ 0
-STATE6
 Text Label 7500 2400 0    50   ~ 0
+STATE0
+Text Label 7500 2300 0    50   ~ 0
+STATE1
+Text Label 7500 2200 0    50   ~ 0
+STATE2
+Text Label 7500 2100 0    50   ~ 0
+STATE3
+Text Label 7500 2000 0    50   ~ 0
+STATE4
+Text Label 7500 1900 0    50   ~ 0
+STATE5
+Text Label 7500 1800 0    50   ~ 0
+STATE6
+Text Label 7500 1700 0    50   ~ 0
 STATE7
 $Comp
 L Device:R_Small R?
@@ -302,21 +302,21 @@ Wire Wire Line
 Wire Wire Line
 	8750 2400 9150 2400
 Wire Wire Line
-	7500 1700 8100 1700
-Wire Wire Line
-	7500 1800 8100 1800
-Wire Wire Line
-	7500 1900 8100 1900
-Wire Wire Line
-	7500 2000 8100 2000
-Wire Wire Line
-	7500 2100 8100 2100
-Wire Wire Line
-	7500 2200 8100 2200
+	7500 2400 8100 2400
 Wire Wire Line
 	7500 2300 8100 2300
 Wire Wire Line
-	7500 2400 8100 2400
+	7500 2200 8100 2200
+Wire Wire Line
+	7500 2100 8100 2100
+Wire Wire Line
+	7500 2000 8100 2000
+Wire Wire Line
+	7500 1900 8100 1900
+Wire Wire Line
+	7500 1800 8100 1800
+Wire Wire Line
+	7500 1700 8100 1700
 Wire Wire Line
 	9150 1600 9150 1700
 Wire Wire Line
@@ -595,61 +595,34 @@ Wire Wire Line
 Connection ~ 4600 2700
 Wire Wire Line
 	9150 2400 9150 2450
-Text Label 4400 1800 0    50   ~ 0
-STATE0
-Text Label 4400 1900 0    50   ~ 0
-STATE1
-Text Label 4400 2000 0    50   ~ 0
-STATE2
-Text Label 4400 2100 0    50   ~ 0
-STATE3
-Text Label 4400 2200 0    50   ~ 0
-STATE4
-Text Label 4400 2300 0    50   ~ 0
-STATE5
 Text Label 4400 2400 0    50   ~ 0
+STATE1
+Text Label 4400 2300 0    50   ~ 0
+STATE2
+Text Label 4400 2200 0    50   ~ 0
+STATE3
+Text Label 4400 2100 0    50   ~ 0
+STATE4
+Text Label 4400 2000 0    50   ~ 0
+STATE5
+Text Label 4400 1900 0    50   ~ 0
 STATE6
-Text Label 5000 2850 0    50   ~ 0
+Text Label 4400 1800 0    50   ~ 0
 STATE7
 Text Label 4400 1700 0    50   ~ 0
 STATE_RST
-Wire Wire Line
-	4250 2400 4850 2400
-Wire Wire Line
-	4850 2850 5450 2850
-Text HLabel 4850 1800 2    50   Output ~ 0
-STATE0
-Text HLabel 4850 1900 2    50   Output ~ 0
-STATE1
-Text HLabel 4850 2000 2    50   Output ~ 0
-STATE2
-Text HLabel 4850 2100 2    50   Output ~ 0
-STATE3
-Text HLabel 4850 2200 2    50   Output ~ 0
-STATE4
-Text HLabel 4850 2300 2    50   Output ~ 0
-STATE5
-Text HLabel 4850 2400 2    50   Output ~ 0
-STATE6
-Text HLabel 5450 2850 2    50   Output ~ 0
-STATE7
 Text HLabel 4850 1700 2    50   Output ~ 0
 STATE_RST
-Connection ~ 4250 2400
 Wire Wire Line
 	4150 1700 4850 1700
 Wire Wire Line
-	4150 1800 4850 1800
-Wire Wire Line
-	4150 1900 4850 1900
-Wire Wire Line
-	4150 2000 4850 2000
-Wire Wire Line
-	4150 2100 4850 2100
+	4150 2300 4850 2300
 Wire Wire Line
 	4150 2200 4850 2200
 Wire Wire Line
-	4150 2300 4850 2300
+	4150 2100 4850 2100
+Wire Wire Line
+	4150 2000 4850 2000
 Text Label 7500 1600 0    50   ~ 0
 STATE_RST
 Wire Wire Line
@@ -764,38 +737,10 @@ F 3 "" H 3400 7550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 7550 3400 7500
-Text Label 2700 4650 0    50   ~ 0
-STATE1
-Text Label 2700 4850 0    50   ~ 0
-STATE2
-Text Label 2700 5200 0    50   ~ 0
-STATE3
-Text Label 2700 5400 0    50   ~ 0
-STATE4
-Text Label 2700 5750 0    50   ~ 0
-STATE5
-Text Label 2700 5950 0    50   ~ 0
-STATE6
 Text Label 2700 4050 0    50   ~ 0
 STATE_RST
-Text Label 2700 4250 0    50   ~ 0
-STATE0
 Wire Wire Line
 	2700 4050 3100 4050
-Wire Wire Line
-	2700 4250 3100 4250
-Wire Wire Line
-	2700 4650 3100 4650
-Wire Wire Line
-	2700 4850 3100 4850
-Wire Wire Line
-	2700 5200 3100 5200
-Wire Wire Line
-	2700 5400 3100 5400
-Wire Wire Line
-	2700 5750 3100 5750
-Wire Wire Line
-	2700 5950 3100 5950
 $Comp
 L 74xx:74HC02 U31
 U 1 1 60890547
@@ -995,5 +940,60 @@ Connection ~ 3300 2050
 Wire Wire Line
 	3300 2050 3300 2100
 Text Notes 6600 4500 0    50   ~ 0
-Generates the Sequental Signals that decide the state of the converter.\n\nD-FlipFlop U29 essentially provides a 9th stage to the shift register U28\n\nNOR Gates U30 and U31 enable the shift-in signal of the register once the first 8 stages are empty. \n\nDuring operation it would be sufficient to tie STATE7 to the shift-in, but this circuit ensures proper \noperation of the state machine after at most 1 cycle through all states, no matter what the initial\nvalue of the register after power up is.\n\nThis shift register operates on the falling edge of the clock. This avoids race conditions:\n\nAll signals are set up by the state machine on the falling clock edge,\nand are latched into the registers on the rising clock.
+Generates the Sequental Signals that decide the state of the converter.\n\nD-FlipFlop U29 essentially provides a 9th stage to the shift register U28\n\nNOR Gates U30 and U31 enable the shift-in signal of the register once the first 8 stages are empty. \n\nDuring operation it would be sufficient to tie STATE0 to the shift-in, but this circuit ensures proper \noperation of the state machine after at most 1 cycle through all states, no matter what the initial\nvalue of the register after power up is.\n\nThis shift register operates on the falling edge of the clock. This avoids race conditions:\n\nAll signals are set up by the state machine on the falling clock edge,\nand are latched into the registers on the rising clock.
+Text HLabel 4850 1900 2    50   Output ~ 0
+STATE6
+Text HLabel 4850 2000 2    50   Output ~ 0
+STATE5
+Text HLabel 4850 2100 2    50   Output ~ 0
+STATE4
+Text HLabel 4850 2200 2    50   Output ~ 0
+STATE3
+Text HLabel 4850 2300 2    50   Output ~ 0
+STATE2
+Text HLabel 4850 2400 2    50   Output ~ 0
+STATE1
+Text HLabel 5550 2850 2    50   Output ~ 0
+STATE0
+Text HLabel 4850 1800 2    50   Output ~ 0
+STATE7
+Wire Wire Line
+	4150 1800 4850 1800
+Wire Wire Line
+	4150 1900 4850 1900
+Wire Wire Line
+	4850 2850 5550 2850
+Text Label 5100 2850 0    50   ~ 0
+STATE0
+Connection ~ 4250 2400
+Wire Wire Line
+	4250 2400 4850 2400
+Text Label 2700 5950 0    50   ~ 0
+STATE1
+Text Label 2700 5750 0    50   ~ 0
+STATE2
+Text Label 2700 5400 0    50   ~ 0
+STATE3
+Text Label 2700 5200 0    50   ~ 0
+STATE4
+Text Label 2700 4850 0    50   ~ 0
+STATE5
+Text Label 2700 4650 0    50   ~ 0
+STATE6
+Text Label 2700 4250 0    50   ~ 0
+STATE7
+Wire Wire Line
+	2700 5950 3100 5950
+Wire Wire Line
+	2700 5750 3100 5750
+Wire Wire Line
+	2700 5400 3100 5400
+Wire Wire Line
+	2700 5200 3100 5200
+Wire Wire Line
+	2700 4850 3100 4850
+Wire Wire Line
+	2700 4650 3100 4650
+Wire Wire Line
+	2700 4250 3100 4250
 $EndSCHEMATC
