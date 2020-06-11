@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 11
+Sheet 5 9
 Title "Schilk_SA-ADC"
 Date "2020-02-03"
 Rev "v0.0 (Prod.)"
@@ -225,12 +225,10 @@ $EndComp
 Wire Wire Line
 	3050 1350 3050 2900
 Wire Wire Line
-	2450 1350 3050 1350
+	2450 1350 2900 1350
 Connection ~ 3050 1350
 Wire Wire Line
 	2450 1450 2600 1450
-Wire Wire Line
-	2600 1450 2600 1650
 $Comp
 L power:GND #PWR0196
 U 1 1 5E3931FD
@@ -253,4 +251,60 @@ F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 3550 1350 50  0001 C CNN
 	1    3550 1350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 606C05C3
+P 4200 4250
+F 0 "H1" H 4300 4296 50  0000 L CNN
+F 1 "MountingHole" H 4300 4205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4200 4250 50  0001 C CNN
+F 3 "~" H 4200 4250 50  0001 C CNN
+	1    4200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 606C0E4F
+P 4200 4550
+F 0 "H2" H 4300 4596 50  0000 L CNN
+F 1 "MountingHole" H 4300 4505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4200 4550 50  0001 C CNN
+F 3 "~" H 4200 4550 50  0001 C CNN
+	1    4200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 606CF77D
+P 2900 1250
+F 0 "#FLG0101" H 2900 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2900 1423 50  0000 C CNN
+F 2 "" H 2900 1250 50  0001 C CNN
+F 3 "~" H 2900 1250 50  0001 C CNN
+	1    2900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1350 2900 1250
+Connection ~ 2900 1350
+Wire Wire Line
+	2900 1350 3050 1350
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60985617
+P 2500 1600
+F 0 "#FLG0102" H 2500 1675 50  0001 C CNN
+F 1 "PWR_FLAG" V 2500 1727 50  0000 L CNN
+F 2 "" H 2500 1600 50  0001 C CNN
+F 3 "~" H 2500 1600 50  0001 C CNN
+	1    2500 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2500 1600 2600 1600
+Wire Wire Line
+	2600 1450 2600 1600
+Connection ~ 2600 1600
+Wire Wire Line
+	2600 1600 2600 1650
 $EndSCHEMATC
