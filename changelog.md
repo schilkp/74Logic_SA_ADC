@@ -3,7 +3,7 @@
 - Greatly simplified state machine & clocking:
 	- State machine is now based on a shift register.
 	- Now clocking state machine on falling clock and registers on rising edge.
-		- Enables conversion in only 9 cyles.
+		- Enables conversion in only 9 cycles.
 - Moved to smaller, 2 layer PCB.
 - Added mounting holes.
 - Added ground test point. 

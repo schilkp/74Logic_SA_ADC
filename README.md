@@ -7,7 +7,7 @@ Built to understand SA-ADCs, and possibly serve as a demonstration unit.
 ![PCB v0.1 Render](https://raw.githubusercontent.com/TheSchilk/SA-ADC/master/Doc/SA-ADC_PCBrender_v0.1.jpg)
 
 ## Status
-Tested v0.0. Waiting of v0.1 prototype.
+Tested v0.0. Waiting for v0.1 prototype.
 
 ## Specifications
 | Specification  | Value  |
@@ -41,10 +41,10 @@ The steps of the conversion are show in the State-Machine outputs/LEDs:
 | 7 | Bit 7 is tested and latched if set. |
 | 6 | Bit 6 is tested and latched if set. |
 | ... | ... |
-| 0 | Bit 0 is tested. Bit 7-1 are latched into the output from the SAR (Successive Approximation Register), and bit 0 is latched from the comparator |
+| 0 | Bit 0 is tested. Bit 7-1 are latched into the output from the SAR , and bit 0 is latched from the comparator |
 
 *A note on clocks/timing:*
-The state machine/shift-register is clocked on the falling edge, while the SAR and the output register are 
+The state machine/shift-register is clocked on the falling edge, while the SAR (Successive Approximation Register) and the output register are 
 latched on the rising edge. This helps avoid race conditions: All signals (including the DAC and hence the
 comparator output) are setup on the falling edge of the clock by the state machine, and have until the 
 rising edge of the clock to stabilize and be latched into the different registers.
