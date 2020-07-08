@@ -1,3 +1,11 @@
+# v0.2
+
+- Fixed State machine reset circuitry.
+- Fixed Sate machine LEDs.
+- Update chip names in schematic
+- Fixed some vias in pads.
+
+
 # v0.1
 
 - Greatly simplified state machine & clocking:
