@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 8 9
 Title "Schilk_SA-ADC"
 Date "2020-02-03"
 Rev "v0.0 (Prod.)"
@@ -76,7 +76,7 @@ L Connector_Generic:Conn_01x03 J1
 U 1 1 5E3765C4
 P 3300 4050
 F 0 "J1" H 3218 3725 50  0000 C CNN
-F 1 "Conn_01x03" H 3218 3816 50  0000 C CNN
+F 1 "Vin" H 3218 3816 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3300 4050 50  0001 C CNN
 F 3 "~" H 3300 4050 50  0001 C CNN
 	1    3300 4050

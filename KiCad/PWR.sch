@@ -119,7 +119,7 @@ L Regulator_Linear:L7805 U38
 U 1 1 5E3890A5
 P 3550 2900
 F 0 "U38" H 3550 3142 50  0000 C CNN
-F 1 "L7805" H 3550 3051 50  0000 C CNN
+F 1 "L7805CDT" H 3550 3051 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 3575 2750 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 3550 2850 50  0001 C CNN
 	1    3550 2900
@@ -216,7 +216,7 @@ L Connector_Generic:Conn_01x02 J2
 U 1 1 5E390AA4
 P 2250 1450
 F 0 "J2" H 2168 1125 50  0000 C CNN
-F 1 "Conn_01x02" H 2168 1216 50  0000 C CNN
+F 1 "Power" H 2168 1216 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 2250 1450 50  0001 C CNN
 F 3 "~" H 2250 1450 50  0001 C CNN
 	1    2250 1450
@@ -245,7 +245,7 @@ L Regulator_Linear:LM317L_TO92 U37
 U 1 1 5E5DEC23
 P 3550 1350
 F 0 "U37" H 3550 1592 50  0000 C CNN
-F 1 "LM317L_TO92" H 3550 1501 50  0000 C CNN
+F 1 "LM317" H 3550 1501 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 3550 1575 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 3550 1350 50  0001 C CNN
 	1    3550 1350
