@@ -4,6 +4,8 @@ A discrete Successive-Approximation ADC built purely from 74-series gates.
 
 Built to understand SA-ADCs, and possibly serve as a demonstration unit.
 
+![PCB v0.2 Picture](https://raw.githubusercontent.com/TheSchilk/SA-ADC/master/Doc/SA-ADC_PCBphoto_v0.2.jpg)
+
 ![PCB v0.2 Render](https://raw.githubusercontent.com/TheSchilk/SA-ADC/master/Doc/SA-ADC_PCBrender_v0.2.jpg)
 
 ## Status
