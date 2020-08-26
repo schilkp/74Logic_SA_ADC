@@ -4,16 +4,16 @@ A discrete Successive-Approximation ADC built purely from 74-series gates.
 
 Built to understand SA-ADCs, and possibly serve as a demonstration unit.
 
-![PCB v0.1 Render](https://raw.githubusercontent.com/TheSchilk/SA-ADC/master/Doc/SA-ADC_PCBrender_v0.2.jpg)
+![PCB v0.2 Render](https://raw.githubusercontent.com/TheSchilk/SA-ADC/master/Doc/SA-ADC_PCBrender_v0.2.jpg)
 
 ## Status
-Tested v0.1, small problems. Waiting for v0.1 prototype.
+Finished. 
 
 ## Specifications
 | Specification  | Value  |
 | :------------ | ------------: |
 | Resolution  | 8-bit  |
-| Sample Rate  |  1Hz - 20Hz |
+| Sample Rate  |  1Hz - 30Hz aprox |
 | Input Voltage Range | 0-5V |
 | Input | Single-ended|
 | Input Source | Included Potentiometer or External Input |
@@ -51,17 +51,20 @@ rising edge of the clock to stabilize and be latched into the different register
 
 ## Overview
 
-**Doc:**
-	Documentation
+**Doc/**  
+	Documentation  
 
-**Gerber:**
-	Gerber Files for PCB Manufacture
+**KiCad/**  
+	KiCad Project Files (Schematic and PCB).  
+	Download KiCad at [kicad-pcb.org](https://kicad-pcb.org/download/).  
 
-**KiCad:**
-    KiCad Project Files (Schematic and PCB).
-    Download KiCad at [kicad-pcb.org](https://kicad-pcb.org/download/).
+**KiCad/ProductionFiles/Gerber/**  
+	Gerber production files.  
 
-**Logisim:**
-	Logic Simulation.
-	Download LogiSim at [cburch.com](http://www.cburch.com/logisim/).
+**KiCad/ProductionFiles/BOM/**  
+	Interactive BOM  
+
+**Logisim/**  
+	Logic Simulation.  
+	Download LogiSim at [cburch.com](http://www.cburch.com/logisim/).  
 

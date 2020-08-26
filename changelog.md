@@ -1,3 +1,8 @@
+# v0.3
+
+- Changed to Schmitt-Trigger ICs  
+- Added pull-down resistor to Clock Enable  
+
 # v0.2
 
 - Fixed State machine reset circuitry.
