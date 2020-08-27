@@ -15,7 +15,7 @@ Finished.
 | Specification  | Value  |
 | :------------ | ------------: |
 | Resolution  | 8-bit  |
-| Sample Rate  |  1Hz - 30Hz aprox |
+| Sample Rate  |  1Hz - 90Hz |
 | Input Voltage Range | 0-5V |
 | Input | Single-ended|
 | Input Source | Included Potentiometer or External Input |
@@ -51,7 +51,7 @@ latched on the rising edge. This helps avoid race conditions: All signals (inclu
 comparator output) are setup on the falling edge of the clock by the state machine, and have until the 
 rising edge of the clock to stabilize and be latched into the different registers.
 
-## Overview
+## Repo Overview
 
 **Doc/**  
 	Documentation  
