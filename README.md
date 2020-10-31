@@ -2,7 +2,7 @@
 ### Philipp Schilk
 A discrete Successive-Approximation ADC built purely from 74-series gates.
 
-Built to understand SA-ADCs, and possibly serve as a demonstration unit.
+Built to understand SA-ADCs, and serve as a demonstration unit.
 
 ![PCB v0.2 Picture](https://raw.githubusercontent.com/TheSchilk/SA-ADC/master/Doc/SA-ADC_PCBphoto_v0.2.jpg)
 
@@ -22,18 +22,17 @@ Finished.
 | Supply Voltage | 9-12Vdc |
 | Output | 8-bit parallel |
 
-As this is a demonstration Unit only really meant for constant inputs, no Sample-&-Hold
-circuit is included.
+As this is a demonstration unit only really meant for DC inputs, no Sample-&-Hold
+stage is included.
 
 ## Successive Approximation Architecture
 
 This Project uses the classic DAC-based Successive Approximation Architecture [Wikipedia](https://en.wikipedia.org/wiki/Successive_approximation_ADC "DAC-based Successive Approxmation Architecture").
 
-It is essentially an analog implementation of the binary-search algorithm. The ADC first
-starts by generating 2.5V (Vref/2) from it's DAC and uses an analog comparator to
-determine if the input is higher or lower than the generated voltage. Depending on the
-comparator's output the DAC voltage is then repeatedly refined to determine each bit of the
-output successively.
+It is essentially an analog implementation of a binary-search algorithm. The ADC first
+it's DAC to 2.5V (Vref/2), and uses an analog comparator to determine if the applied input voltage is 
+higher or lower than the generated voltage. Depending on the comparator's output the DAC voltage is 
+then repeatedly refined to determine each bit of the conversion-result successively.
 
 The steps of the conversion are show in the State-Machine outputs/LEDs:
 
@@ -47,9 +46,10 @@ The steps of the conversion are show in the State-Machine outputs/LEDs:
 
 *A note on clocks/timing:*
 The state machine/shift-register is clocked on the falling edge, while the SAR (Successive Approximation Register) and the output register are 
-latched on the rising edge. This helps avoid race conditions: All signals (including the DAC and hence the
+latched on the rising edge. Due to this, all signals (including the DAC and hence the
 comparator output) are setup on the falling edge of the clock by the state machine, and have until the 
-rising edge of the clock to stabilize and be latched into the different registers.
+rising edge of the clock to stabilize and be latched into the different registers. This reduces the complexity of the
+state machine/logic somewhat.
 
 ## Repo Overview
 
