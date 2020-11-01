@@ -4,9 +4,9 @@ A discrete Successive-Approximation ADC built purely from 74-series gates.
 
 Built to understand SA-ADCs, and serve as a demonstration unit.
 
-![PCB v0.2 Picture](https://raw.githubusercontent.com/TheSchilk/SA-ADC/master/Doc/SA-ADC_PCBphoto_v0.2.jpg)
+![PCB v0.2 Picture](Doc/SA-ADC_PCBphoto_v0.2.jpg)
 
-![PCB v0.2 Render](https://raw.githubusercontent.com/TheSchilk/SA-ADC/master/Doc/SA-ADC_PCBrender_v0.2.jpg)
+![PCB v0.2 Render](Doc/SA-ADC_PCBrender_v0.2.jpg)
 
 ## Status
 Finished. 
@@ -33,6 +33,12 @@ It is essentially an analog implementation of a binary-search algorithm. The ADC
 it's DAC to 2.5V (Vref/2), and uses an analog comparator to determine if the applied input voltage is 
 higher or lower than the generated voltage. Depending on the comparator's output the DAC voltage is 
 then repeatedly refined to determine each bit of the conversion-result successively.
+
+Here are two example conversions, with Vin = 2V and Vin = 0V:
+
+![Example Conversion of Vin = 2V](Doc/SA-Demo1.png)
+![Example Conversion of Vin = 0V](Doc/SA-Demo2.png)
+
 
 The steps of the conversion are show in the State-Machine outputs/LEDs:
 
