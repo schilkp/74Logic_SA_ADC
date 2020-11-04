@@ -29,7 +29,7 @@ stage is included.
 
 This Project uses the classic DAC-based Successive Approximation Architecture [Wikipedia](https://en.wikipedia.org/wiki/Successive_approximation_ADC "DAC-based Successive Approxmation Architecture").
 
-It is essentially an analog implementation of a binary-search algorithm. The ADC first
+It is essentially an analog implementation of a binary-search algorithm. The ADC first sets 
 it's DAC to 2.5V (Vref/2), and uses an analog comparator to determine if the applied input voltage is 
 higher or lower than the generated voltage. Depending on the comparator's output the DAC voltage is 
 then repeatedly refined to determine each bit of the conversion-result successively.
@@ -59,20 +59,15 @@ state machine/logic somewhat.
 
 ## Repo Overview
 
+See [Github Releases]() for Gerbers, Interactive BOM, etc.
+
 **Doc/**  
 	Documentation  
 
 **KiCad/**  
 	KiCad Project Files (Schematic and PCB).  
-	Download KiCad at [kicad-pcb.org](https://kicad-pcb.org/download/).  
-
-**KiCad/ProductionFiles/Gerber/**  
-	Gerber production files.  
-
-**KiCad/ProductionFiles/BOM/**  
-	Interactive BOM  
 
 **Logisim/**  
-	Logic Simulation.  
+	Visual Logic Simulation.  
 	Download LogiSim at [cburch.com](http://www.cburch.com/logisim/).  
 
