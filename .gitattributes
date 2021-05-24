@@ -1,4 +1,6 @@
-# Ignore HTML BOMs in Github's Language Stats
+# Show KiCad
+*.kicad_pcb linguist-detectable
+*.sch linguist-detectable
+
+# Ignore HTML
 *.html linguist-detectable=false
-
-
