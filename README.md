@@ -54,8 +54,7 @@ The steps of the conversion are show in the State-Machine outputs/LEDs:
 The state machine/shift-register is clocked on the falling edge, while the SAR (Successive Approximation Register) and the output register are 
 latched on the rising edge. Due to this, all signals (including the DAC and hence the
 comparator output) are setup on the falling edge of the clock by the state machine, and have until the 
-rising edge of the clock to stabilize and be latched into the different registers. This reduces the complexity of the
-state machine/logic somewhat.
+rising edge of the clock to stabilize and be latched into the different registers.
 
 ## Repo Overview
 
