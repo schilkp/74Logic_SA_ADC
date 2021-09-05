@@ -1,6 +1,6 @@
 # SA-ADC
 ### Philipp Schilk
-A discrete Successive-Approximation ADC built purely from 74-series gates.
+A discrete successive-approximation ADC controlled by a 74-series logic gate state machine.
 
 Built to understand SA-ADCs, and serve as a demonstration unit.
 
