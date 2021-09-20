@@ -58,7 +58,7 @@ rising edge of the clock to stabilize and be latched into the different register
 
 ## Repo Overview
 
-See [Github Releases]() for Gerbers, Interactive BOM, etc.
+See [Github Releases](https://github.com/TheSchilk/74Logic_SA_ADC/releases) for Gerbers, Interactive BOM, etc.
 
 **Doc/**  
 	Documentation  
@@ -70,3 +70,5 @@ See [Github Releases]() for Gerbers, Interactive BOM, etc.
 	Visual Logic Simulation.  
 	Download LogiSim at [cburch.com](http://www.cburch.com/logisim/).  
 
+## Other Links
+[Very short video demo](https://www.youtube.com/watch?v=ZFlC2hURkEs)
